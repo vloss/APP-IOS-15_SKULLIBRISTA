@@ -51,6 +51,9 @@
                                         <rect key="frame" x="43.666666666666657" y="554.66666666666663" width="314" height="43"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="playAgain"/>
+                                        <connections>
+                                            <action selector="playAgain:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z4N-t9-taa"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Você jogou durante x segundos." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SCg-k5-NOD">
                                         <rect key="frame" x="73" y="503.66666666666674" width="255" height="21"/>
@@ -91,6 +94,13 @@
                             <constraint firstItem="62j-LK-hFT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="vKg-w7-c3l"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lbInstructions" destination="abU-BQ-uRr" id="WEu-TX-DbR"/>
+                        <outlet property="lbTimePlayed" destination="SCg-k5-NOD" id="RPS-Xm-frb"/>
+                        <outlet property="player" destination="Hze-N2-BB7" id="y74-5T-Wae"/>
+                        <outlet property="street" destination="Gqx-Sg-ppN" id="31j-x8-CcN"/>
+                        <outlet property="viGameOver" destination="EQU-q3-Cl1" id="vKc-vi-txb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
