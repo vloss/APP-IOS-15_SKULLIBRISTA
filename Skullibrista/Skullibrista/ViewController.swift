@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var lbInstructions: UILabel!
     
     var isMoving = false
-    lazy  var motionManager = CMMotionManager()
+    lazy var motionManager = CMMotionManager()
     var gameTimer: Timer!
     var startDate: Date!
     
@@ -27,11 +27,9 @@ class ViewController: UIViewController {
         
         street.frame.size.width = view.frame.size.width * 2
         street.frame.size.height = street.frame.size.width * 2
-        
-        
         street.center = view.center
-        
         player.center = view.center
+        
         player.animationImages = []
         for i in 0...7 {
             let image = UIImage(named: "player\(i)")!
@@ -89,6 +87,7 @@ class ViewController: UIViewController {
     }
     
     func checkGameOver(){
+
         let worldAngle = atan2(street.transform.a, street.transform.b)
         let playerAngle = atan2(player.transform.a, player.transform.b)
         let difference = abs(worldAngle - playerAngle)
@@ -106,6 +105,4 @@ class ViewController: UIViewController {
     @IBAction func playAgain(_ sender: UIButton) {
         start()
     }
-    
 }
-
