@@ -15,11 +15,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="street" translatesAutoresizingMaskIntoConstraints="NO" id="Gqx-Sg-ppN">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="street" translatesAutoresizingMaskIntoConstraints="NO" id="Gqx-Sg-ppN">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="player0" translatesAutoresizingMaskIntoConstraints="NO" id="Hze-N2-BB7">
-                                <rect key="frame" x="126.66666666666669" y="286" width="140" height="280"/>
+                                <rect key="frame" x="126.66666666666669" y="298.66666666666669" width="140" height="280.00000000000006"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Hze-N2-BB7" secondAttribute="height" multiplier="1:2" id="88o-t6-2rV"/>
                                     <constraint firstAttribute="width" constant="140" id="Wa7-pL-lYC"/>
@@ -76,22 +77,18 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.90588235294117647" green="0.95686274509803915" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Hze-N2-BB7" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="4EE-Tr-mbL"/>
                             <constraint firstItem="EQU-q3-Cl1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="6To-Ox-HEW"/>
-                            <constraint firstItem="Hze-N2-BB7" firstAttribute="centerX" secondItem="Gqx-Sg-ppN" secondAttribute="centerX" id="86b-7J-W4A"/>
                             <constraint firstItem="62j-LK-hFT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9IX-UJ-Mbx"/>
                             <constraint firstAttribute="trailing" secondItem="EQU-q3-Cl1" secondAttribute="trailing" constant="-8" id="As3-34-Dvi"/>
-                            <constraint firstItem="Hze-N2-BB7" firstAttribute="centerY" secondItem="Gqx-Sg-ppN" secondAttribute="centerY" id="CQx-9B-j66"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="abU-BQ-uRr" secondAttribute="trailing" constant="36" id="HKl-Fi-99l"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="62j-LK-hFT" secondAttribute="trailing" id="NXJ-Ni-Q10"/>
-                            <constraint firstItem="Gqx-Sg-ppN" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="OvI-tY-lXc"/>
                             <constraint firstAttribute="bottom" secondItem="EQU-q3-Cl1" secondAttribute="bottom" id="UG8-ja-qDU"/>
-                            <constraint firstItem="Gqx-Sg-ppN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="buK-mp-Tra"/>
                             <constraint firstItem="abU-BQ-uRr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="36" id="exx-KC-H0Q"/>
                             <constraint firstItem="EQU-q3-Cl1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="g5v-kN-2lP"/>
-                            <constraint firstAttribute="bottom" secondItem="Gqx-Sg-ppN" secondAttribute="bottom" id="nmO-8r-wNf"/>
                             <constraint firstItem="abU-BQ-uRr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="qqc-g8-JSg"/>
-                            <constraint firstItem="Gqx-Sg-ppN" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="rpa-v2-VNx"/>
                             <constraint firstItem="62j-LK-hFT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="vKg-w7-c3l"/>
+                            <constraint firstItem="Hze-N2-BB7" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="yY6-xx-6o3"/>
                         </constraints>
                     </view>
                     <connections>
